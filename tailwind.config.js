@@ -4,34 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        // TatiSaathi palette — drawn from Mising handloom dye traditions
-        cotton: "#F7F1E3", // undyed handspun cotton (eri/muga base cloth)
+        // xilpo-X palette — light mode only, minimal register (Mising Archives style)
+        cream: "#FAF8F3", // page background
+        cotton: "#F8F4EE", // alternate background used by the phone-card shell
+        surface: "#FFFFFF", // cards, inputs
+        line: "#E8E2D6", // hairline borders
+        ink: {
+          DEFAULT: "#2B2621", // primary text
+          muted: "#7A7268", // secondary text
+        },
         indigo: {
-          DEFAULT: "#24365C", // natural indigo dye, primary brand color
-          light: "#3C548A",
+          DEFAULT: "#2B4A8F",
           dark: "#182543",
         },
-        madder: {
-          DEFAULT: "#B4432E", // madder-root red, used for CTAs
-          light: "#CB5B44",
-          dark: "#8F3423",
-        },
-        ochre: {
-          DEFAULT: "#E3A83B", // turmeric/ochre dye, secondary accent
-          light: "#EFC372",
-        },
-        paddy: "#587A4B", // paddy-field green, used for success states
-        ink: "#2A2622", // near-black warm ink for text
+        rust: "#A8452F", // single primary accent — reserved for the one action that matters
+        ochre: "#C68A2E", // secondary accent — active language toggle only
       },
       fontFamily: {
-        display: ['"Baloo 2"', "system-ui", "sans-serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
-      },
-      boxShadow: {
-        phone: "0 30px 60px -15px rgba(42, 38, 34, 0.35)",
+        sans: ["system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        display: ["system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+        bengali: ['"Noto Sans Bengali"', "system-ui", "sans-serif"],
       },
       borderRadius: {
-        phone: "2.75rem",
+        phone: "32px",
+      },
+      boxShadow: {
+        phone: "0 30px 80px rgba(24, 37, 67, 0.22)",
       },
     },
   },
